@@ -1,4 +1,4 @@
-package com.team.videoeditorapp;
+package com.example.task_sahilsingh_grip;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("com.team.videoeditorapp", appContext.getPackageName());
+        assertEquals("com.example.task_sahilsingh_grip", appContext.getPackageName());
     }
 }

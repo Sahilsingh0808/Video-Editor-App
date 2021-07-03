@@ -1,4 +1,4 @@
-package com.team.videoeditorapp;
+package com.example.task_sahilsingh_grip;
 
 import org.junit.Test;
 
