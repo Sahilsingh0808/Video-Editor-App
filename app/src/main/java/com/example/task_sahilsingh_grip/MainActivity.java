@@ -6,12 +6,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.util.Base64;
 import android.util.Log;
 import android.view.View;
-import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 import com.facebook.AccessToken;
 import com.facebook.BuildConfig;
 import com.facebook.CallbackManager;
@@ -19,11 +16,9 @@ import com.facebook.FacebookCallback;
 import com.facebook.FacebookException;
 import com.facebook.FacebookSdk;
 import com.facebook.GraphRequest;
-import com.facebook.GraphRequestBatch;
 import com.facebook.GraphResponse;
 import com.facebook.LoggingBehavior;
 import com.facebook.Profile;
-import com.facebook.appevents.AppEventsLogger;
 import com.facebook.login.LoginManager;
 import com.facebook.login.LoginResult;
 import com.facebook.login.widget.LoginButton;
@@ -71,8 +66,6 @@ public class MainActivity extends AppCompatActivity {
         signInButton = findViewById(R.id.sign_in_button);
         signInButton.setSize(SignInButton.SIZE_STANDARD);
         login = (LoginButton) findViewById(R.id.login_button);
-//        getHashkey();
-
         if (BuildConfig.DEBUG) {
             FacebookSdk.setIsDebugEnabled(true);
             FacebookSdk.addLoggingBehavior(LoggingBehavior.INCLUDE_ACCESS_TOKENS);
@@ -108,17 +101,17 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onSuccess(LoginResult loginResult) {
                         handleFacebookToken(loginResult.getAccessToken());
-//
+                        Log.i("TAG","Login Success");
                     }
 
                     @Override
                     public void onCancel() {
-
+                        Log.i("TAG","Login Cancel");
                     }
 
                     @Override
                     public void onError(FacebookException error) {
-
+                        Log.i("TAG","Login Error");
                     }
                 });
             }
