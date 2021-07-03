@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "644830814613",
+    "project_id": "video-editor-app-b115a",
+    "storage_bucket": "video-editor-app-b115a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:644830814613:android:f928e9d96c79fee9f4d69c",
+        "android_client_info": {
+          "package_name": "com.team.videoeditorapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "644830814613-kpo6ksie64oj3ltkp85fuoqc8cnovkam.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChGS831TfA2OIvsLHIusWdKiQv7UlWjVE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "644830814613-kpo6ksie64oj3ltkp85fuoqc8cnovkam.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
