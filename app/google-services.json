@@ -7,41 +7,20 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:644830814613:android:03868e2fa0984cf8f4d69c",
+        "mobilesdk_app_id": "1:644830814613:android:b58e2a73da7168e5f4d69c",
         "android_client_info": {
-          "package_name": "com.example.task_sahilsingh_grip"
+          "package_name": "com.example.video_editor_app"
         }
       },
       "oauth_client": [
         {
-          "client_id": "644830814613-kpo6ksie64oj3ltkp85fuoqc8cnovkam.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyChGS831TfA2OIvsLHIusWdKiQv7UlWjVE"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "644830814613-kpo6ksie64oj3ltkp85fuoqc8cnovkam.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:644830814613:android:f928e9d96c79fee9f4d69c",
-        "android_client_info": {
-          "package_name": "com.team.videoeditorapp"
-        }
-      },
-      "oauth_client": [
+          "client_id": "644830814613-ipd4s4lvqu8v9vtj6r31q4b4pi3avthh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.video_editor_app",
+            "certificate_hash": "4e1a9a606d6420e4ac28d62e88e1bbcb9ec44f68"
+          }
+        },
         {
           "client_id": "644830814613-kpo6ksie64oj3ltkp85fuoqc8cnovkam.apps.googleusercontent.com",
           "client_type": 3

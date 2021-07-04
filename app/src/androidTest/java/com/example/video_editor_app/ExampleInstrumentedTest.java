@@ -1,4 +1,4 @@
-package com.example.task_sahilsingh_grip;
+package com.example.video_editor_app;
 
 import android.content.Context;
 

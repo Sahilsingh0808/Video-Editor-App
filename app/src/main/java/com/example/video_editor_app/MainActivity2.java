@@ -1,4 +1,4 @@
-package com.example.task_sahilsingh_grip;
+package com.example.video_editor_app;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -7,15 +7,12 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.google.android.gms.common.SignInButton;
 import com.squareup.picasso.Picasso;
 
 import java.io.IOException;
@@ -105,5 +102,9 @@ public class MainActivity2 extends AppCompatActivity {
         });
 
         builder.create().show();
+    }
+
+    public void video(View view) {
+        startActivity(new Intent(MainActivity2.this,Video_Initial_Screen.class));
     }
 }

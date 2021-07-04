@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TrimActivity">
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/pause"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/pause" />
+
+    <EditText
+        android:id="@+id/speed"
+        android:layout_width="98dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/pause"
+        android:layout_alignStart="@+id/pause"
+        android:layout_alignLeft="@+id/pause"
+        android:layout_alignEnd="@+id/pause"
+        android:layout_alignRight="@+id/pause"
+        android:layout_marginStart="-5dp"
+        android:layout_marginLeft="-5dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="96dp"
+        android:background="@color/ColorPrimaryDark"
+        android:ems="10"
+        android:hint="Enter speed"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/speed_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/null"
+        android:layout_below="@+id/pause"
+        android:layout_alignStart="@+id/pause"
+        android:layout_alignLeft="@+id/pause"
+        android:layout_alignEnd="@+id/pause"
+        android:layout_alignRight="@+id/pause"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="-181dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="112dp"
+        android:text="Speed" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_90sdp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/teal_200"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvvLeft"
+            android:textSize="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:text="00:00:00"
+            android:layout_below="@+id/seekbar"
+            />
+
+        <TextView
+            android:id="@+id/tvvRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="17dp"
+            android:layout_below="@id/seekbar"
+            android:gravity="end"
+            android:textSize="17sp"
+            android:text="00:00:00"
+            android:layout_alignParentRight="true"
+            />
+
+        <org.florescu.android.rangeseekbar.RangeSeekBar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="17dp"
+            rsb_indicator_text="#fff"
+            rsb_progress_color="@color/ColorPrimaryDark"
+            rsb_progress_default_color="@color/ColorPrimaryDark"
+            android:layout_marginLeft="17dp"
+            rsb_tick_mark_text_color="@color/ColorPrimaryDark"
+            android:layout_centerInParent="true"
+            android:id="@+id/seekbar"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

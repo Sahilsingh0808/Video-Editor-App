@@ -1,4 +1,4 @@
-package com.example.task_sahilsingh_grip;
+package com.example.video_editor_app;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -35,7 +35,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 
-public class MainActivity extends AppCompatActivity {
+public class LoginScreen extends AppCompatActivity {
 
 
     GoogleSignInClient mGoogleSignInClient;
@@ -60,9 +60,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        FacebookSdk.sdkInitialize(getApplicationContext());
+
 
         setContentView(R.layout.activity_main);
+        FacebookSdk.sdkInitialize(getApplicationContext());
         signInButton = findViewById(R.id.sign_in_button);
         signInButton.setSize(SignInButton.SIZE_STANDARD);
         login = (LoginButton) findViewById(R.id.login_button);
@@ -90,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         callbackManager = CallbackManager.Factory.create();
-        LoginManager.getInstance().logInWithReadPermissions(MainActivity.this, Arrays.asList("email", "public_profile", "user_birthday"));
+        LoginManager.getInstance().logInWithReadPermissions(LoginScreen.this, Arrays.asList("email", "public_profile", "user_birthday"));
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -147,7 +148,7 @@ public class MainActivity extends AppCompatActivity {
                     data.add(profile_image);
                     data.add(email);
                     data.add(gender);
-                    Intent intent = new Intent(MainActivity.this, MainActivity2.class);
+                    Intent intent = new Intent(LoginScreen.this, MainActivity2.class);
                     intent.putExtra("DATA", data);
                     startActivity(intent);
                     finish();
@@ -166,7 +167,6 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
-
         if (requestCode == RC_SIGN_IN) {
             // The Task returned from this call is always completed, no need to attach
             // a listener.
@@ -202,7 +202,7 @@ public class MainActivity extends AppCompatActivity {
                 data.add(personEmail);
                 data.add(personId);
                 data.add(personPhoto.toString());
-                Intent intent = new Intent(MainActivity.this, MainActivity2.class);
+                Intent intent = new Intent(LoginScreen.this, MainActivity2.class);
                 intent.putExtra("DATA", data);
                 startActivity(intent);
                 finish();
